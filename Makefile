@@ -43,7 +43,7 @@ $(BASE_NAME)-cover.pdf: cover-letter.tex
 .PHONY: clean pdf nocolors cover check
 
 clean:
-	rm -rf build $(PDF_NAME) $(COVER_PDF_NAME) $(CV_PLUS_COVER_PDF)
+	rm -rf build $(PDF_NAME) $(COVER_PDF_NAME) $(CV_PLUS_COVER_PDF) missfont.log
 
 check:
 	aspell -t -l en -c cover-letter.tex
