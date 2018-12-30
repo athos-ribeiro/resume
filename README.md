@@ -1,9 +1,9 @@
 # About this repository
 
 This is my personal resume, based on Adrien Friggeri resume tex template. I did
-change some of the fonts to use fonts freely available (FiraSans). There is a
-`print` option which renders in black and white, and reverts the header to dark
-on light, if printing on paper is needed.
+change some of the fonts to use fonts freely available (FiraSans). There is an
+option to render the resume in black and white and revert the header to dark on
+light. This is useful if printing on paper is needed.
 
 # Requirements
 
@@ -17,6 +17,16 @@ correct package names (patches are welcome).
 * mozilla-fira-sans-fonts
 * texlive-textpos
 * texlive-xetex
+* aspell
+
+# Useful commands
+
+* `make`: build resume
+* `make cover`: build resume with cover letter
+* `make cover-nocolors`: build resume with cover letter. Everything in black and white
+* `make nocolors`: build resume in black and white
+* `make check`: Use `aspell` to check for typos
+* `make clean`: (:
 
 # License
 
