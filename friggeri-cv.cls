@@ -324,6 +324,7 @@
 
 \defbibheading{bibheading}[\bibname]{%   \subsubsection*{#1}   \markboth{#1}{#1}
 }
+\defbibheading{subbibliography}[\refname]{\subsection{#1}}
 
 \newcommand{\printbibsection}[2]{%
   \begin{refsection}%
