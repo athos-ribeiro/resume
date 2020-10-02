@@ -53,9 +53,9 @@ Portuguese - native
 English - fluent
 Spanish - basic
 \section{programming}
-Python, Ruby, Perl, Shell script, Go, C/C++, HTML5, SQL
+Python, Shell script, Go, Ruby, Perl, C/C++, HTML5, SQL
 \section{software}
-GNU/Linux, Ansible, Chef, Docker, Vagrant, RPM, git, \LaTeX
+GNU/Linux, Ansible, Docker, OpenShift, RPM, git, \LaTeX
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -101,12 +101,14 @@ GNU/Linux, Ansible, Chef, Docker, Vagrant, RPM, git, \LaTeX
 {Red Hat}
 {Brno, Czech Republic}
 {\emph{Software Engineer} \\
-  Work on the development of OpenShift Build Service (OSBS), a collection of
-  tools, workflows and integration points that build and release layered
-  container images. \\
+  Currently working on the development of the OpenShift Build Service (OSBS), a
+  collection of tools, workflows and integration points that build and release
+  layered container images. \\
 Detailed achievements:
 \begin{itemize}
-  \item Worked on the development of different components that integrate OSBS (mostly Python)
+  \item Worked on the design, development, and maintenance of different components that integrate OSBS
+  \item Maintained upstream projects (mostly Python), Ansible playbooks, and OpenShift deployments
+  \item Worked on a service to publish references to the source code shipped in Red Hat container images
 \end{itemize}
 }
 %------------------------------------------------
@@ -120,7 +122,7 @@ Detailed achievements:
   architecture to a microservices architecture. \\
 Detailed achievements:
 \begin{itemize}
-  \item Taught git, shell scripting, Docker, RPM packaging, Puppet, Jenkins, and agile methods
+  \item git, Docker, RPM packaging, Puppet, Jenkins, agile methods
 \end{itemize}
 }
 %------------------------------------------------
@@ -141,6 +143,12 @@ Detailed achievements:
 \end{itemize}
   }
 
+% This was needed to avoid weird page break behaviors :/
+% this may need to be moved as new entries are added to this resume
+\end{entrylist}
+\begin{entrylist}
+
+
 %------------------------------------------------
 \entry
 {2014--2015}
@@ -155,11 +163,6 @@ Detailed achievements:
 \item Investigated software flaws and static analyzer warnings
 \end{itemize}
   }
-
-% This was needed to avoid weird page break behaviors :/
-% this may need to be moved as new entries are added to this resume
-\end{entrylist}
-\begin{entrylist}
 
 %------------------------------------------------
 
@@ -202,10 +205,6 @@ Marketing Director of Concreta Consultoria e Serviços, Civil Engineering Junior
 Detailed achievements:
   \begin{itemize}
     \item Packaging RPM software to be included in the distribution, which often involves sending patches to upstream projects
-    \item Member of the Static Analysis Special Interest Group
-    \item Member of the Ruby Special Interest Group
-    \item Member of the x86 Special Interest Group
-    \item Infrastructure Apprentice
     \item English to Brazilian Portuguese Translator
     \item Help organizing Fedora related events and meetings in Brazil
   \end{itemize}}
@@ -336,6 +335,17 @@ Detailed achievements:
 \begin{entrylist}
 
 %------------------------------------------------
+\entry
+{2020}
+{Nest with Fedora}
+{Virtual Conference}
+  {}
+
+\entry
+{2019}
+{OPENSLAVA}
+{Bratislava, Slovakia}
+  {}
 
 \entry
 {2017}
@@ -402,6 +412,11 @@ Detailed achievements:
 {Brasília, DF, Brazil}
 {}
 
+% This was needed to avoid weird page break behaviors :/
+% this may need to be moved as new entries are added to this resume
+\end{entrylist}
+\begin{entrylist}
+
 \entry
 {2013}
 {FISL 14 - Fórum Internacional Software Livre}
@@ -413,12 +428,6 @@ Detailed achievements:
 {FLISOL 2013 - Festival Latino Americano de Instalação de Software Livre}
 {Ceilândia, DF, Brazil}
 {}
-
-% This was needed to avoid weird page break behaviors :/
-% this may need to be moved as new entries are added to this resume
-\end{entrylist}
-\begin{entrylist}
-
 
 \entry
 {2012}
@@ -471,15 +480,17 @@ Detailed achievements:
 
 \printbibsection{book}{books} % Print all books from the bibliography
 
-\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=brazil"
-\nocite{*}
-\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={brazil}, heading=bibheading]
-\end{refsection}
+\printbibsection{inproceedings}{peer-reviewed conferences/proceedings} % Print all inproceedings from the bibliography
 
-\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=brazil"
-\nocite{*}
-\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={brazil}, heading=bibheading]
-\end{refsection}
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=brazil"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={brazil}, heading=bibheading]
+%\end{refsection}
+
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=brazil"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={brazil}, heading=bibheading]
+%\end{refsection}
 
 \printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
 
